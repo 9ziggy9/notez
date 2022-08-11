@@ -1,0 +1,120 @@
+/* Name: Russian Violet */
+/* Hex: #300350 */
+/* Name: Mardi Gras */
+/* Hex: #94167F */
+/* Name: Cerise Pink */
+/* Hex: #E93479 */
+/* Name: Rajah */
+/* Hex: #F9AC53 */
+/* Name: Persian Rose */
+/* Hex: #F62E97 */
+/* Name: Persian Blue */
+/* Hex: #153CB4 */
+:root {
+    --russian-violet: #300350;
+    --mardi-gras: #94167F;
+    --cerise-pink: #E93479;
+    --rajah: #F9AC53;
+    --persian-rose: #F62E97;
+    --persian-blue: #153CB4;
+} 
+
+body, html {
+    position: absolute;
+    margin: 0;
+    background-color: var(--cerise-pink);
+    color: var(--rajah);
+    font-family: 'Gafata', sans-serif;
+    width: 100%;
+    height: 100%;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-background {
+    background-color: #153CB496;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#note-content {
+    background-color: var(--rajah);
+    color: var(--persian-blue);
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing:border-box;
+    border: none;
+    width:100%;
+    height:100%;
+    resize: none;
+    caret-color: var(--persian-rose);
+}
+
+#add-button {
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+}
+
+#edit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rajah);
+    width:33%;
+    height:33%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px;
+    align-items: center;
+    background-color: var(--russian-violet);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-button {
+    font-size: 32px;
+    font-weight: bold;
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+}
+
+#add-sunday,
+#add-monday,
+#add-tuesday,
+#add-wednesday,
+#add-thursday,
+#add-friday,
+#add-saturday,
+#add-sunday {
+    font-size: 32px;
+    font-weight: bold;
+    color: green;
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+}
+
+.hidden { /* use case for important */
+    display: none !important;
+}
