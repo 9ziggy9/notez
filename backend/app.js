@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 // BRING IN ENVIRONMENT
@@ -8,7 +9,7 @@ const {PORT} = process.env;
 const notesRouter = require('./routes/notes.js');
 
 // MIDDLEWARE
-app.use(express.static('../frontend'));
+app.use(cors());
 app.use(express.json());
 app.use('/notes', notesRouter);
 
